@@ -16,11 +16,13 @@ $(function () {
       text += '<tr>';
       if (noHeader) {
         for (att in ob)
-          text += `<th>${att}</th>`;
+          if (att == 'date')
+            text += `<th class="width-100">${att}</th>`;
+          else
+            text += `<th>${att}</th>`;
         text += '</tr><tr>';
         noHeader = false;
       }
-
       if (ob['date'].slice(0, 4) == selectedYear) {
         contElementApi++
         for (att in ob)
