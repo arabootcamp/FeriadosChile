@@ -28,7 +28,7 @@ $(function () {
       }
       text += '</tr>';
     }
-    text += `</table><p class="my-3"><strong>Total de elementos encontrados: ${contElementApi}</strong></p></div>`;
+    text += `</table><p class="my-3"><strong>Total de elementos encontrados en la API: ${contElementApi}</strong></p></div>`;
     $('#response').append(text);
   }
 
